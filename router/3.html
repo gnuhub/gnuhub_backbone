@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gnuhub_backbone</title>
+    <meta charset="utf-8"> 
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="http://backbonejs.org/backbone-min.js"></script>
+    <script>
+    (function ($) {
+            MyRouter = Backbone.Router.extend({
+                routes: {
+                    'hello' : 'sayHello', 
+                    '' : 'start',
+                    '*default': 'defaultRoute'
+                },
+
+                sayHello: function(){
+                    console.log('Saying hello');
+                },
+                start: function(){
+                    console.log('start');
+                },
+                defaultRoute: function(){
+                    console.log('Router does not handle this route');
+                }
+            });
+
+            var router = new MyRouter();
+
+            Backbone.history.start();
+    })(jQuery);
+    </script>
+</body>
+</html>
