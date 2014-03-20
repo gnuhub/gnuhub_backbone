@@ -35,3 +35,25 @@ You can also use the .attributes property to get a JSON object that represents a
 initialize when new Model 
 Object {name: "backbone.js", date: "2014", author: "No One"}
 ```
+5.html
+-----------
+set
+```
+initialize when new Model 
+Object{
+	author: "No One",
+	date: "2014",
+	name: "Beginning Backbone.js",
+	__proto__: Object
+}
+
+````
+
+6.html
+------------
+unset
+```
+initialize when new Model 6.html:15
+Object {name: "Beginning Backbone.js", date: "2014", author: "No One"} 6.html:24
+Object {name: "Beginning Backbone.js", author: "No One"}
+```
