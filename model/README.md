@@ -119,3 +119,13 @@ The name attribute has changed 11.html:20
 Model Changed 11.html:17
 Object {name: "gnuhub_backbone", author: "No One"} 
 ```
+Attribute Changes Reference
+----------------------------------
+
+| Operation | Description |
+| ---------- | ----------- |
+| `.on('change', <function>)` | Provides a global change handler that responds to any attribute changing in the model |
+| `.on('change:<attribute name>', <function>)` | Listens for changes on a particular attribute |
+| `.hasChanged(<attribute name>` | Returns true if the attribute has changed since the last change event |
+| `.previous(<attribute name>)` | Returns the previous value of a particular attribute |
+| `.changed` | Returns a complete set of all the changed attributes in the model |
