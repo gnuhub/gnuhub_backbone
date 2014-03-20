@@ -12,10 +12,16 @@
     (function ($) {
            Book = Backbone.Model.extend({
                 initialize: function(){
-                    console.log('a new book');
+                    console.log('initialize when new Model');
+                },
+                defaults: {
+                    name: 'Book Title',
+                    author: 'No One'
                 }
             });
            var myBook = new Book();
+           console.log('get the Model defaults name : ' + myBook.get('name'));
+
     })(jQuery);
     </script>
 </body>
