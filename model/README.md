@@ -90,3 +90,13 @@ Attribute Function Reference
 | clear() | Removes all attributes from the model object. |
 | .attributes | Returns a JSON representation of all attributes in the model. |
 | .clone() | Creates a new instance of the model with all the same attributes. |
+
+9.html
+-----------
+
+Adding Functions to Your Model
+
+```
+initialize when new Model 9.html:15
+Book Title by No One
+```
