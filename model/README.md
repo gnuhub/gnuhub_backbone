@@ -84,7 +84,7 @@ Attribute Function Reference
 | Operation | Description |
 | ---------- | ----------- |
 | .get(<attribute name>) | Returns the value of the attribute with the given name. If no such attribute exists, undefined is returned. |
-| .set(<attribute name>, attribute value> | Sets the value of the given attribute to the value provided in the second parameter. If the attribute doesn’t already exist, a new attribute is created with this value. |
+| .set(<attribute name>, <attribute value>) | Sets the value of the given attribute to the value provided in the second parameter. If the attribute doesn’t already exist, a new attribute is created with this value. |
 | .has(<attribute name>) | Checks for the existence of the given attribute in the model object. |
 | unset(<attribute name>) | Removes an attribute from the model, if it exists. |
 | clear() | Removes all attributes from the model object. |
