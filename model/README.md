@@ -66,3 +66,14 @@ Object {name: "Beginning Backbone.js", date: "2014", author: "No One"} 7.html:24
 Object {name: "Beginning Backbone.js", author: "No One"} 7.html:26
 Object {} 
 ```
+8.html
+-----------
+clone
+```
+initialize when new Model 8.html:15
+Object {name: "Beginning Backbone.js", date: "2014", author: "No One"} 8.html:24
+Object {name: "Beginning Backbone.js", author: "No One"} 8.html:26
+initialize when new Model 8.html:15
+Object {} 8.html:29
+Object {name: "Beginning Backbone.js", author: "No One"} 
+```

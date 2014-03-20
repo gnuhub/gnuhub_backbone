@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gnuhub_backbone</title>
+    <meta charset="utf-8"> 
+</head>
+<body>
+    <script src="http://localhost:8080/jquery-2.0.2.min.js"></script>
+    <script src="http://localhost:8080/underscore-min.js"></script>
+    <script src="http://localhost:8080/backbone-min.js"></script>
+    <script>
+    (function ($) {
+           Book = Backbone.Model.extend({
+                initialize: function(){
+                    console.log('initialize when new Model');
+                },
+                defaults: {
+                    name: 'Book Title',
+                    author: 'No One'
+                }
+            });
+           var myBook = new Book({name:"backbone.js",date:"2014"});
+           myBook.set('name', 'Beginning Backbone.js');
+           console.log(myBook.attributes);
+           myBook.unset('date')
+           console.log(myBook.attributes);
+           var clonedBook = myBook.clone();
+           myBook.clear();
+           console.log(myBook.attributes);
+           console.log(clonedBook.attributes);
+
+    })(jQuery);
+    </script>
+</body>
+</html>
