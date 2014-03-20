@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gnuhub_backbone</title>
+    <meta charset="utf-8"> 
+</head>
+<body>
+    <script src="http://localhost:8080/jquery-2.0.2.min.js"></script>
+    <script src="http://localhost:8080/underscore-min.js"></script>
+    <script src="http://localhost:8080/backbone-min.js"></script>
+    <script>
+    (function ($) {
+           Book = Backbone.Model.extend({
+                initialize: function(){
+                    console.log('initialize when new Model');
+                },
+                defaults: {
+                    name: 'Book Title',
+                    author: 'No One'
+                }
+            });
+           var myBook = new Book({name:"backbone.js",date:"2014"});
+           console.log('get the Model data : name=' + myBook.get('name') + ' author=' + myBook.get('author') + ' date=' + myBook.get('date') );
+
+    })(jQuery);
+    </script>
+</body>
+</html>
