@@ -109,3 +109,13 @@ Object {name: "Book Title", author: "No One"} 10.html:30
 Model Changed 10.html:17
 Object {name: "gnuhub_backbone", author: "No One"}
 ```
+11.html
+-------------
+You can listen for changes in specific attributes by using the format `change:<attribute name>` rather than change. 
+```
+initialize when new Model 11.html:15
+Object {name: "Book Title", author: "No One"} 11.html:33
+The name attribute has changed 11.html:20
+Model Changed 11.html:17
+Object {name: "gnuhub_backbone", author: "No One"} 
+```
