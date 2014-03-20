@@ -100,3 +100,12 @@ Adding Functions to Your Model
 initialize when new Model 9.html:15
 Book Title by No One
 ```
+10.html
+--------------
+Listening for Changes
+```
+initialize when new Model 10.html:15
+Object {name: "Book Title", author: "No One"} 10.html:30
+Model Changed 10.html:17
+Object {name: "gnuhub_backbone", author: "No One"}
+```
