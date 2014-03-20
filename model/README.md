@@ -129,3 +129,13 @@ Attribute Changes Reference
 | `.hasChanged(<attribute name>` | Returns true if the attribute has changed since the last change event |
 | `.previous(<attribute name>)` | Returns the previous value of a particular attribute |
 | `.changed` | Returns a complete set of all the changed attributes in the model |
+
+12.html
+-------------
+Model Validation
+```
+initialize when new Model 12.html:15
+Object {name: "Book Title", author: "No One"} 12.html:44
+**Validation Error : Year must be after 2000** 12.html:23
+Object {name: "Book Title", author: "No One"} 12.html:46
+```
