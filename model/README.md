@@ -26,3 +26,12 @@ set Model defaults
 ```
 During object creation, it is possible to pass through the values of the attributes in the modelso that each instance can be unique.
 ```
+4.html
+-----------
+```
+You can also use the .attributes property to get a JSON object that represents all of the model data.
+```
+```
+initialize when new Model 
+Object {name: "backbone.js", date: "2014", author: "No One"}
+```
