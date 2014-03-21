@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gnuhub_backbone</title>
+    <meta charset="utf-8"> 
+</head>
+<body>
+    <div id="sidecar"></div><!-- must before new LibraryView({el:"#sidecar"}) -->
+    <script src="http://localhost:8080/jquery-2.0.2.min.js"></script>
+    <script src="http://localhost:8080/underscore-min.js"></script>
+    <script src="http://localhost:8080/backbone-min.js"></script>
+    <script>
+    (function ($) {
+           LibraryView = Backbone.View.extend({
+        
+                initialize: function(){
+                    console.log('View created');
+                },
+        
+            });
+           var myView = new LibraryView({el:"#sidecar"});
+           console.log(myView.el);
+    })(jQuery);
+    </script>
+    
+</body>
+</html>
