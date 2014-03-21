@@ -21,3 +21,14 @@ By passing an el attribute to the constructor, you are telling the view which DO
 View created
 <div id="sidecar"></div>
 ```
+3.html
+-----------
+You can also create the el for the view dynamically by passing a number of properties to the view when constructing it.
+tagName: The name of the HTML element to use for the view. If none is specified, the value of tagNamewill default to div.
+className: The CSS class that will be used to render this element. This property is optional. You can specify a number of classes for the element, passing them through as space-separated values.
+id: The ID to assign to the element. This property is optional.
+attributes: Additional attributes to assign to the element, such as data- attributes in name-value pairs.
+```
+View created
+<ul data-date=​"Fri Mar 21 2014 10:​55:​09 GMT+0800 (CST)​" id=​"library" class=​"libraryview">​</ul>​
+```
