@@ -32,3 +32,10 @@ attributes: Additional attributes to assign to the element, such as data- attrib
 View created
 <ul data-date=​"Fri Mar 21 2014 10:​55:​09 GMT+0800 (CST)​" id=​"library" class=​"libraryview">​</ul>​
 ```
+4.html
+----------
+```
+View created 4.html:17
+begin to render 4.html:21
+<div id=​"sidecar">​Hello Library​</div>​
+```
